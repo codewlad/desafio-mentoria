@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, legend, footer input {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+}
+
+header p, .input-wrapper {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    background-color: #C1BCCC;
+}
+
+body::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    height: 436px;
+    width: 100%;
+    background-color: #535971;
+}
+
+#page {
+    width: 750px;
+    margin: auto;
+}
+
+header {
+    width: 417px;
+    margin-top: 140px;
+}
+
+h1, p {
+    color: #FFF;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 18px;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    padding: 64px;
+    margin-top: 58px;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;    
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+legend {
+    font-size: 24px;
+    line-height: 34px;
+    color: #535971;
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6F0;
+    margin-bottom: 16px;
+}
+
+.col-2 {
+    display: flex;
+    gap: 22px;
+}
+
+.col-2 div {
+    width: 100%;
+}
+
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+
+.input-wrapper label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #706e76;
+    margin-left: 9px;
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 34px;
+    color: #535971;
+}
+
+.col-3 {
+    display: flex;
+    gap: 22px;
+    gap: 10px;
+}
+
+.col-3 div {
+    min-width: 140px;
+}
+
+.col-3 > div:nth-child(1) {
+    width: 100%;
+    margin-right: 12px;
+}
+
+footer {
+    height: 160px;
+    background: #535971;
+    border-radius: 0px 0px 20px 20px;
+    padding: 52px 71px;
+    margin-bottom: 366px;
+}
+
+footer input {
+    width: 100%;
+    height: 55px;
+    background: #FF5374;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+footer input:hover {
+    background: #c8425c;
+}
+
+input:invalid {
+    border: 1px solid #FF5374;
+}
